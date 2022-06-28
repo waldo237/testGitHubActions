@@ -3,23 +3,7 @@ name: update-master-from-migration
 
 on: 
   push:
-    branches: [ "feature/lightspeed-transition" ]
-    types:
-      - labeled
-      - unlabeled
-      - synchronize
-      - opened
-      - edited
-      - ready_for_review
-      - reopened
-      - unlocked
-  pull_request_review:
-    types:
-      - submitted
-  check_suite:
-    types:
-      - completed
-  status: {}
+    branches: "feature/lightspeed-transition"
 jobs:
   automerge:
     runs-on: ubuntu-latest
